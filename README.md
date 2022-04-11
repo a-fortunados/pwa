@@ -1,5 +1,5 @@
 # Programación Web Avanzada
-![](https://pedco.uncoma.edu.ar/pluginfile.php/13856/course/section/5391/PWA60.jpeg)
+![](https://cdn.discordapp.com/attachments/938426490847117352/963220157759643668/PWA60.jpeg)
 
 ## Integrantes G1
 - [Cristhian Cantero](https://github.com/CristhianCantero)
