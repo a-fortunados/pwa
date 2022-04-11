@@ -6,12 +6,12 @@
 - [Santiago Avilez Ariza]()
 
 ## Integrantes G2
-- [Cardozo Ramiro Tomas]()
-- [Di Fiore Guido Tomás]()
+- [Cardozo Ramiro Tomas](https://github.com/Raam4)
+- [Di Fiore Guido Tomás](https://github.com/guidodf98)
 
 ## Integrantes G3
-- [Diaz Aimar Federico]()
-- [Garrado Mamani Juan Cristian]()
+- [Diaz Aimar Federico](https://github.com/diazAimar)
+- [Garrado Mamani Juan Cristian](https://github.com/cristian96-code)
 
 ## Integrantes G4
 - [Juan Marcos Gonzalez](https://github.com/jmarcosg)
