@@ -1,0 +1,46 @@
+body{
+  background-color: #E5E5E5
+  ;
+}
+
+footer{
+  min-height: 20vh;
+}
+
+
+/* Ejercicio 1 */
+
+@media (min-width: 768px) {
+  #header div p {
+    background-color: #0dcaf0 !important;
+  }
+
+  #col-2 div {
+    background-color: #dc3545 !important;
+  }
+
+  #col-3 div {
+    background-color: #198754 !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+  #header div p {
+    background-color: #198754 !important;
+  }
+
+  #col-3 div {
+    background-color: #dc3545 !important;
+  }
+}
+
+#imagenes-thumb img{
+  height: 150px;
+}
+
+#imagenes-nombres p{
+  color: #3eb495;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
