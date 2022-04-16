@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Ejercicio 6-b</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container container-fluid d-flex justify-content-between">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img/logo.png" alt="" width="37" height="34">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Ejercicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./ejercicio-0.html">Ejercicio 0</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-1.html">Ejercicio 1</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-2.html">Ejercicio 2</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-3.html">Ejercicio 3</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-4.html">Ejercicio 4</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-5.html">Ejercicio 5</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-6.html">Ejercicio 6</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-7.html">Ejercicio 7</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-3-b.html">Ejercicio 3 b</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-4-b.html">Ejercicio 4 b</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-5-b.html">Ejercicio 5 b</a></li>
+              <li><a class="dropdown-item" href="./ejercicio-6-b.html">Ejercicio 6 b</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container bg-white p-5">
+
+    <div id="header" class="row">
+      <div class="col">
+        <div class="bg-warning">
+          <h1 class="text-center">Encabezado</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="fila-1" class="row">
+      <div class="col">
+        <div style="background-color: blueviolet;">
+          <h1 class="text-center">Fila 1</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Miniaturas -->
+    <div id="imagenes-thumb" class="row row-cols-6 my-3">
+      <div class="col">
+        <button class="btn active" type="button" onclick="showInfo(1)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+          <img src="./img/portadas-peliculas/cadena-perpetua.jpg" class="d-block mx-auto w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(2)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1" aria-label="Slide 2">
+          <img src="./img/portadas-peliculas/el-padrino.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(3)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2" aria-label="Slide 3">
+          <img src="./img/portadas-peliculas/el-caballero-oscuro.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(4)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3" aria-label="Slide 4">
+          <img src="./img/portadas-peliculas/el-padrino-2.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(5)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4" aria-label="Slide 5">
+          <img src="./img/portadas-peliculas/12-hombres-sin-piedad.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(6)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="5" aria-label="Slide 6">
+          <img src="./img/portadas-peliculas/la-lista-de-schindler.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(7)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="6" aria-label="Slide 7">
+          <img src="./img/portadas-peliculas/el-señor-de-los-anillos.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(8)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="7" aria-label="Slide 8">
+          <img src="./img/portadas-peliculas/pulp-fiction.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(9)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="8" aria-label="Slide 9">
+          <img src="./img/portadas-peliculas/el-señor-de-los-anillos-2.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(10)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="9" aria-label="Slide 10">
+          <img src="./img/portadas-peliculas/el-bueno-el-feo-y-el-malo.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(11)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="10" aria-label="Slide 11">
+          <img src="./img/portadas-peliculas/forest-gump.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+      <div class="col">
+        <button class="btn" type="button" onclick="showInfo(12)" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="11" aria-label="Slide 12">
+          <img src="./img/portadas-peliculas/el-club-de-la-lucha.jpg" class="d-block w-100 img-fluid" alt="...">
+        </button>
+      </div>
+    </div>
+
+    <div id="imagenes" class="row my-3">
+      <!-- Titulo Pelicula -->
+      <div id="imagenes-nombres" class="col col-3 offset-1">
+        <div class="row">
+          <button class="btn active" type="button" onclick="showInfo(1)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+            <p>Cadena Perpetua</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(2)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1" aria-label="Slide 2">
+            <p>El Padrino</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(3)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2" aria-label="Slide 3">
+            <p>El Caballero Oscuro</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(4)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3" aria-label="Slide 4">
+            <p>El Padrino: Parte II</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(5)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4" aria-label="Slide 5">
+            <p>12 Hombres Sin Piedad</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(6)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="5" aria-label="Slide 6">
+            <p>La Lista De Schindler</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(7)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="6" aria-label="Slide 7">
+            <p>El Señor De Los Anillos: El Retorno Del Rey</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(8)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="7" aria-label="Slide 8">
+            <p>Pulp Fiction</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(9)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="8" aria-label="Slide 9">
+            <p>El Señor De Los Anillos: La Comunidad Del Anillo</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(10)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="9" aria-label="Slide 10">
+            <p>El Bueno, El Feo y El Malo</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(11)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="10" aria-label="Slide 11">
+            <p>Forrest Gump</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" type="button" onclick="showInfo(12)" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="11" aria-label="Slide 12">
+            <p>El Club De La Lucha</p>
+          </button>
+        </div>
+      </div>
+      <!-- Portada Pelicula -->
+      <div id="imagenes-carrusel" class="col align-self-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/portadas-peliculas/cadena-perpetua.jpg" class="d-block mx-auto my-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-padrino.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-caballero-oscuro.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-padrino-2.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/12-hombres-sin-piedad.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/la-lista-de-schindler.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-señor-de-los-anillos.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/pulp-fiction.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-señor-de-los-anillos-2.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-bueno-el-feo-y-el-malo.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/forest-gump.jpg" class="d-block mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/portadas-peliculas/el-club-de-la-lucha.jpg" class="d-block mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Datos Pelicula -->
+    <div id="img-info-1" class="row">
+      <div id="imagenes-tabla-1" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td colspan="3">Drama</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Frank Darabont</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Stephen King</td>
+              <td colspan="2">Frank Darabont</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Tim Robbins</td>
+              <td>Morgan Freeman</td>
+              <td>Bob Gunton</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1994</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 22min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,3/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Andy Dufresne es encarcelado por matar a su esposa y al amante de esta. Tras una dura adaptación, intenta mejorar las condiciones de la prisión y dar esperanza a sus compañeros.</p>
+      </div>
+    </div>
+    <div id="img-info-2" class="row d-none">
+      <div id="imagenes-tabla-2" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td colspan="2">Crimen</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Francis Ford Coppola</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Mario Puzo</td>
+              <td colspan="2">Francis Ford Coppola</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Marlon Brando</td>
+              <td>Al Pacino</td>
+              <td>James Caan</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1972</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 55min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,2/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">El envejecido patriarca de una dinastía del crimen organizado en la ciudad de Nueva York de la posguerra transfiere el control de su imperio clandestino a su reacio hijo menor.</p>
+      </div>
+    </div>
+    <div id="img-info-3" class="row d-none">
+      <div id="imagenes-tabla-3" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td>Crimen</td>
+              <td>Acción</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Christopher Nolan</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Jonathan Nolan</td>
+              <td>Christopher Nolan</td>
+              <td>David S. Goyer</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Christian Bale</td>
+              <td>Heath Ledger</td>
+              <td>Aaron Eckhart</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">2008</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 32min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,1/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Cuando la amenaza conocida como el Joker causa estragos y el caos en Gotham City, Batman debe aceptar una de las mayores pruebas psicológicas y físicas para luchar contra la injusticia.</p>
+      </div>
+    </div>
+    <div id="img-info-4" class="row d-none">
+      <div id="imagenes-tabla-4" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td colspan="2">Crimen</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Francis Ford Coppola</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Francis Ford Coppola </td>
+              <td colspan="2">Mario Puzo</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Al Pacino</td>
+              <td>Robert De Niro</td>
+              <td>Robert Duvall</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1994</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">3h 22min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,3/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Se retratan los inicios de la vida y la carrera de Vito Corleone en el Nueva York de los años 20, mientras su hijo, Michael, amplía y refuerza su control sobre el sindicato del crimen familiar.</p>
+      </div>
+    </div>
+    <div id="img-info-5" class="row d-none">
+      <div id="imagenes-tabla-5" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td colspan="2 colspan="3"">Crimen</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Sidney Lumet</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td colspan="3">Reginald Rose</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Henry Fonda</td>
+              <td>Lee J. Cobb</td>
+              <td>Martin Balsam</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1957</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">1h 36min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,3/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Un miembro del jurado trata de evitar un error judicial obligando al resto del jurado a reconsiderar las pruebas.</p>
+      </div>
+    </div>
+    <div id="img-info-6" class="row d-none">
+      <div id="imagenes-tabla-6" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td>Biografía</td>
+              <td>Historia</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Steven Spielberg</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Thomas Keneally</td>
+              <td colspan="2">Steven Zaillian</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Liam Neeson</td>
+              <td>Ralph Fiennes</td>
+              <td>Reparto principal</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1993</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">3h 15min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,0/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">En la Polonia ocupada por los alemanes durante la Segunda Guerra Mundial, el industrial Oskar Schindler se preocupa por sus trabajadores judíos tras presenciar su persecución por los nazis.</p>
+      </div>
+    </div>
+    <div id="img-info-7" class="row d-none">
+      <div id="imagenes-tabla-7" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Acción</td>
+              <td>Aventura</td>
+              <td>Drama</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Peter Jackson</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>J.R.R. Tolkien</td>
+              <td>Fran Walsh</td>
+              <td>Philippa Boyens</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Elijah Wood</td>
+              <td>Viggo Mortensen</td>
+              <td>Ian McKellen</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">2003</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">3h 21min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">9,0/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Gandalf y Aragorn lideran el mundo de los hombres contra la armada de Sauron para distraer su atención de Frodo y Sam, quienes se aproximan al Monte del Destino con el Anillo Único.</p>
+      </div>
+    </div>
+    <div id="img-info-8" class="row d-none">
+      <div id="imagenes-tabla-8" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td colspan="2">Crimen</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Quentin Tarantino</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Quentin Tarantino</td>
+              <td colspan="2">Roger Avary</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>John Travolta</td>
+              <td>Uma Thurman</td>
+              <td>Samuel L. Jackson</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1994</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 34min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">8,9/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Las vidas de dos mafiosos, un boxeador, la esposa de un gánster y un par de bandidos se entrelazan en cuatro historias de violencia y redención.</p>
+      </div>
+    </div>
+    <div id="img-info-9" class="row d-none">
+      <div id="imagenes-tabla-9" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td>Acción</td>
+              <td>Aventura</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Peter Jackson</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>J.R.R. Tolkien</td>
+              <td>Fran Walsh</td>
+              <td>Philippa Boyens</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Elijah Wood</td>
+              <td>Ian McKellen</td>
+              <td>Orlando Bloom</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">2001</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 58min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">8,9/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Un hobbit de la Comarca y ocho compañeros emprenden un viaje para destruir el poderoso Anillo Único y salvar la Tierra Media del Señor Oscuro Sauron.</p>
+      </div>
+    </div>
+    <div id="img-info-10" class="row d-none">
+      <div id="imagenes-tabla-10" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Aventura</td>
+              <td colspan="2">Western</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Sergio Leone</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Luciano Vincenzoni</td>
+              <td>Sergio Leone</td>
+              <td>Agenore Incrocci</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Clint Eastwood</td>
+              <td>Eli Wallach</td>
+              <td>Lee Van Cleef</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1966</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">3h 2min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">8,8/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Durante la Guerra de Secesión, tres cazarrecompensas se lanzan a la búsqueda de un tesoro que ninguno puede localizar sin la ayuda de los otros dos.</p>
+      </div>
+    </div>
+    <div id="img-info-11" class="row d-none">
+      <div id="imagenes-tabla-11" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td>Drama</td>
+              <td colspan="2">Romance</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">Robert Zemeckis</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Winston Groom</td>
+              <td colspan="2">Eric Roth</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Tom Hanks</td>
+              <td>Robin Wright</td>
+              <td>Gary Sinise</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1994</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 22min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">8,8/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Las presidencias de Kennedy y Johnson, los acontecimientos de Vietnam, el Watergate y otros eventos históricos se desarrollan a través de la perspectiva de un hombre de Alabama con un coeficiente intelectual de 75.</p>
+      </div>
+    </div>
+    <div id="img-info-12" class="row d-none">
+      <div id="imagenes-tabla-12" class="col">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Genero</th>
+              <td colspan="3">Drama</td>
+            </tr>
+            <tr>
+              <th scope="row">Dirección</th>
+              <td colspan="3">David Fincher</td>
+            </tr>
+            <tr>
+              <th scope="row">Guión</th>
+              <td>Chuck Palahniuk</td>
+              <td colspan="2">Jim Uhls</td>
+            </tr>
+            <tr>
+              <th scope="row">Reparto principal</th>
+              <td>Brad Pitt</td>
+              <td>Edward Norton</td>
+              <td>Meat Loaf</td>
+            </tr>
+            <tr>
+              <th scope="row">Año</th>
+              <td colspan="3">1999</td>
+            </tr>
+            <tr>
+              <th scope="row">Duración</th>
+              <td colspan="3">2h 19min</td>
+            </tr>
+            <tr>
+              <th scope="row">Puntuación</th>
+              <td colspan="3">8,8/10</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col align-self-center">
+        <p style="font-size: 1.3rem">Un oficinista insomne y un desentendido fabricante de jabones forman un club de lucha clandestino que se convierte en mucho más.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer class="bg-light">
+    <div class="row">
+      <div class="col">
+        <p class="text-center">© 2022 Cine.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap/bootstrap.js"></script>
+  <script src="./js/showMovieInfo.js"></script>
+</body>
+
+</html>
