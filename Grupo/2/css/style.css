@@ -1,0 +1,26 @@
+.exe-div{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#fila-1{
+    background-image: url("../img/heroLastEx.png");
+}
+
+#imagenes{
+    background-color: rgba(108, 117, 125, 0.25);
+}
+
+#imagenes-thumb img{
+    height: 150px;
+}
+
+#imagenes-nombres p{
+    color: var(--bs-primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.list-group-item.active{
+    border: 2.5px solid var(--bs-primary);
+}
