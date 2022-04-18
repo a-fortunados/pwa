@@ -1,0 +1,35 @@
+@media screen and (min-width: 1400px) {
+    .xxl {
+      background: #50C878;
+    }
+}
+
+@media screen and (max-width: 1399px) and (min-width: 1200px ) {
+    .xl {
+      background: #50C878;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .lg {
+      background: #50C878;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .md {
+      background: #50C878;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+    .sm {
+      background: #50C878;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .xs {
+      background: #50C878;
+    }
+}

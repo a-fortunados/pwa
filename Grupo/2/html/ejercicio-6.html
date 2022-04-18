@@ -16,7 +16,7 @@
 <body class="d-flex flex-column h-100 bg-dark">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container container-fluid d-flex justify-content-between">
-      <a class="navbar-brand" href="./ejercicio-2.html">
+      <a class="navbar-brand" href="index.html">
         <img src="../img/logo.png" alt="" width="37" height="34">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -31,11 +31,12 @@
               Ejercicios
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./ejercicio-2.html">Ejercicio 2 al 7</a></li>
-              <li><a class="dropdown-item" href="./ejercicio-3.html">Ejercicio 3*</a></li>
-              <li><a class="dropdown-item" href="./ejercicio-4.html">Ejercicio 4*</a></li>
-              <li><a class="dropdown-item" href="./ejercicio-5.html">Ejercicio 5*</a></li>
-              <li><a class="dropdown-item" href="./ejercicio-6.html">Ejercicio 6*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-0.html">Ejercicio 0</a></li>
+              <li><a class="dropdown-item" href="index.html">Ejercicio 2 al 7</a></li>
+              <li><a class="dropdown-item" href="ejercicio-3.html">Ejercicio 3*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-4.html">Ejercicio 4*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-5.html">Ejercicio 5*</a></li>
+              <li><a class="dropdown-item" href="#">Ejercicio 6*</a></li>
             </ul>
           </li>
         </ul>
@@ -47,7 +48,7 @@
 
     <div id="header" class="row bg-dark">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32">
             <use xlink:href="#bootstrap"></use>
           </svg>
@@ -160,63 +161,64 @@
       <!-- Titulo Pelicula -->
       <div id="imagenes-nombres" class="list-group text-center col-sm-4">
 
-        <button id="btn-1" class="btn list-group-item list-group-item-action bg-dark active" type="button" onclick="showInfo(1)"
-          data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">
+        <button id="btn-1" class="btn list-group-item list-group-item-action bg-dark active" type="button"
+          onclick="showInfo(1)" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-current="true"
+          aria-label="Slide 1">
           <p>Cadena Perpetua</p>
         </button>
 
-        <button id="btn-2" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(2)"
-          data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2">
+        <button id="btn-2" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(2)" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2">
           <p>El Padrino</p>
         </button>
 
-        <button id="btn-3" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(3)"
-          data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3">
+        <button id="btn-3" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(3)" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3">
           <p>El Caballero Oscuro</p>
         </button>
 
-        <button id="btn-4" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(4)"
-          data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4">
+        <button id="btn-4" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(4)" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4">
           <p>El Padrino: Parte II</p>
         </button>
 
-        <button id="btn-5" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(5)"
-          data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5">
+        <button id="btn-5" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(5)" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5">
           <p>12 Hombres Sin Piedad</p>
         </button>
 
-        <button id="btn-6" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(6)"
-          data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6">
+        <button id="btn-6" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(6)" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6">
           <p>La Lista De Schindler</p>
         </button>
 
-        <button id="btn-7" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(7)"
-          data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7">
+        <button id="btn-7" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(7)" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7">
           <p>El Señor De Los Anillos: El Retorno Del Rey</p>
         </button>
 
-        <button id="btn-8" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(8)"
-          data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8">
+        <button id="btn-8" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(8)" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8">
           <p>Pulp Fiction</p>
         </button>
 
-        <button id="btn-9" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(9)"
-          data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9">
+        <button id="btn-9" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(9)" data-bs-target="#myCarousel" data-bs-slide-to="8" aria-label="Slide 9">
           <p>El Señor De Los Anillos: La Comunidad Del Anillo</p>
         </button>
 
-        <button id="btn-10" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(10)"
-          data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10">
+        <button id="btn-10" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(10)" data-bs-target="#myCarousel" data-bs-slide-to="9" aria-label="Slide 10">
           <p>El Bueno, El Feo y El Malo</p>
         </button>
 
-        <button id="btn-11" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(11)"
-          data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11">
+        <button id="btn-11" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(11)" data-bs-target="#myCarousel" data-bs-slide-to="10" aria-label="Slide 11">
           <p>Forrest Gump</p>
         </button>
 
-        <button id="btn-12" class="btn list-group-item list-group-item-action bg-dark" type="button" onclick="showInfo(12)"
-          data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12">
+        <button id="btn-12" class="btn list-group-item list-group-item-action bg-dark" type="button"
+          onclick="showInfo(12)" data-bs-target="#myCarousel" data-bs-slide-to="11" aria-label="Slide 12">
           <p>El Club De La Lucha</p>
         </button>
 

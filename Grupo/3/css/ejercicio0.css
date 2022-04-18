@@ -1,0 +1,145 @@
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: url('../images/interstellar-body-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #f4f4f4;
+  min-height: 100vh;
+}
+
+.nav-link {
+  color: #f4f4f4;
+}
+
+.nav-link:hover{
+  color: #0080ff;
+}
+
+#navbar {
+  border-bottom: 1px solid #0080ff;
+  background-color:rgba(12, 22, 60, .9);
+}
+
+#enunciado {
+  background-color: #f4f4f4;
+  color: #020202;
+}
+
+#hero img {
+  opacity: 0.8;
+}
+
+#hero .nombre-pelicula {
+  position: absolute;
+  font-size: 40px;
+  bottom: 250px;
+  left: 150px ;
+}
+
+#hero .descripcion {
+  position: absolute;
+  font-size: 18px;
+  bottom: 175px;
+  left: 150px ;
+}
+
+#hero .ver-pelicula {
+  position: absolute;
+  bottom: 100px;
+  left: 150px ;
+}
+
+#main .card {
+  background-color: #1a1e27; 
+  color: #f4f4f4;
+  border: 0;  
+  margin-top: 60px;
+  width: 200px;
+}
+
+#main .card img {
+  width: 200px;
+  height: 300px;
+}
+
+#main .card-descripcion {
+  height: 300px;
+  /* overflow: scroll; */
+}
+
+#pelicula {
+  background-color: #1a1e27; 
+  color: #f4f4f4;
+  border: 0;  
+  margin-top: 60px;
+  padding: 0;
+}
+
+.btn {
+  width: 110px;
+}
+
+#pelicula .card-text {
+  height: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#pelicula .card-title {
+  font-weight: bold;
+}
+
+/* #pelicula a {
+  width: 200px;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#ultimos-estrenos h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#navbar, #footer {
+  background-color: #080f28;
+}
+
+
+#footer .container {
+  height: 50px;
+}
+
+.copy {
+  margin: 0;
+}
+
+.img{
+  /* height: 480px; */
+  margin-top: 37px;
+  width: 100%;
+  align-self: center;
+}
+
+.table{
+  color: white;
+}

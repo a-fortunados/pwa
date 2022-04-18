@@ -2,93 +2,387 @@
 <html lang="en" class="h-100">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>PWA TP 1 - Bootstrap</title>
+  <title>PWA TP 1 - Ejercicio 2</title>
 
-    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
-
-    <style type="text/css">
-        .autohide {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1030;
-        }
-
-        .scrolled-down {
-            transform: translateY(-100%);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .scrolled-up {
-            transform: translateY(0);
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function () {
-            el_autohide = document.querySelector('.autohide');
-            navbar_height = document.querySelector('.navbar').offsetHeight;
-            document.body.style.paddingTop = navbar_height + 'px';
-            if (el_autohide) {
-                var last_scroll_top = 0;
-                window.addEventListener('scroll', function () {
-                    let scroll_top = window.scrollY;
-                    if (scroll_top < last_scroll_top) {
-                        el_autohide.classList.remove('scrolled-down');
-                        el_autohide.classList.add('scrolled-up');
-                    } else {
-                        el_autohide.classList.remove('scrolled-up');
-                        el_autohide.classList.add('scrolled-down');
-                    }
-                    last_scroll_top = scroll_top;
-                });
-            }
-        });
-    </script>
+  <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100 mt-1">
-    <nav class="autohide navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Inicio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main_nav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./ejercicio-2.html"> Ejercicio 2 </a></li>
-                    <li class="nav-item"><a class="nav-link" href="./ejercicio-3.html"> Ejercicio 3 </a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container container-fluid d-flex justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="../img/logo.png" alt="" width="37" height="34">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Ejercicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="ejercicio-0.html">Ejercicio 0</a></li>
+              <li><a class="dropdown-item" href="#">Ejercicio 2 al 7</a></li>
+              <li><a class="dropdown-item" href="ejercicio-3.html">Ejercicio 3*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-4.html">Ejercicio 4*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-5.html">Ejercicio 5*</a></li>
+              <li><a class="dropdown-item" href="ejercicio-6.html">Ejercicio 6*</a></li>
+            </ul>
+          </li>
+        </ul>
 
-    <div class="container mb-3">
-        <h1>Index page</h1>
+      </div>
     </div>
+  </nav>
+  <!--End Navbar-->
+  <div class="container mb-3">
 
-    <footer class="footer mt-auto py-3 bg-dark">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home" aria-selected="true">Inicio</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="exe-2-tab" data-bs-toggle="tab" data-bs-target="#exe-2" type="button" role="tab"
+          aria-controls="exe-2" aria-selected="false">Ejercicio 2</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="exe-3-tab" data-bs-toggle="tab" data-bs-target="#exe-3" type="button" role="tab"
+          aria-controls="exe-3" aria-selected="false">Ejercicio 3</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="exe-4-tab" data-bs-toggle="tab" data-bs-target="#exe-4" type="button" role="tab"
+          aria-controls="exe-4" aria-selected="false">Ejercicio 4</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="exe-5-tab" data-bs-toggle="tab" data-bs-target="#exe-5" type="button" role="tab"
+          aria-controls="exe-5" aria-selected="false">Ejercicio 5</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="exe-6-tab" data-bs-toggle="tab" data-bs-target="#exe-6" type="button" role="tab"
+          aria-controls="exe-6" aria-selected="false">Ejercicio 6</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+
+      <div class="exe-div tab-pane fade show active m-1 px-2 pb-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <h1>Inicio</h1>
+      </div>
+
+      <div class="exe-div tab-pane fade m-1 px-2 pb-3" id="exe-2" role="tabpanel" aria-labelledby="exe-2-tab">
+        <header class="py-4">
+          <h2>Ejercicio 2</h2>
+        </header>
         <div class="container">
-            <p style="color: whitesmoke;">Copyright 2022</p>
-            <p>
-                <a href="#">Back to top</a>
-            </p>
+          <div class="row">
+            <div class="col-xxl-10 col-xl-9 col-lg-8 col-md-7 col-sm-6 col-xs-5" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-xs-7" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+
+      <div class="exe-div tab-pane fade m-1 px-2 pb-3" id="exe-3" role="tabpanel" aria-labelledby="exe-3-tab">
+        <header class="py-4">
+          <h2>Ejercicio 3</h2>
+        </header>
+        <div class="container justify-content-center" style="max-width: 720px;">
+          <h3>Fixed container</h3>
+          <div class="row">
+            <div class="col-4" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-4" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col-4" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container-fluid justify-content-center">
+          <h3>Fluid container</h3>
+          <div class="row">
+            <div class="col-4" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-4" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col-4" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exe-div tab-pane fade m-1 px-2 pb-3" id="exe-4" role="tabpanel" aria-labelledby="exe-4-tab">
+        <header class="py-4">
+          <h2>Ejercicio 4</h2>
+        </header>
+        <div class="container">
+          <h3>Primer inciso</h3>
+          <div class="row">
+            <div class="col-4" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-md-4" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col-4" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <h3>Segundo inciso</h3>
+
+          <div class="row">
+            <div class="col-6" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-lg-6" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <h3>Tercer inciso</h3>
+          <div class="row">
+            <div class="col" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-6" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <h3>Cuarto inciso</h3>
+          <div class="row">
+            <div class="col" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-auto" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2. Con el valor '-auto' a la clase 'col',
+                podemos ajustar el tamaño de la columna a su contenido</p>
+            </div>
+            <div class="col" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exe-div tab-pane fade m-1 px-2 pb-3" id="exe-5" role="tabpanel" aria-labelledby="exe-5-tab">
+        <header class="py-4">
+          <h2>Ejercicio 5</h2>
+        </header>
+        <h3>Inciso 1</h3>
+        <div class="container">
+          <div class="row align-items-start" style="background-color: gray; min-height: 10rem;">
+            <div class="col" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h3>Inciso 2</h3>
+        <div class="container">
+          <div class="row align-items-center" style="background-color: gray; min-height: 10rem;">
+            <div class="col" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+            <div class="col" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h3>Inciso 3</h3>
+        <div class="container">
+          <div class="row align-items-end" style="background-color: gray; min-height: 10rem;">
+            <div class="col" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+
+            <div class="col" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+
+            <div class="col" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h3>Inciso 4</h3>
+        <div class="container">
+          <div class="row" style="background-color: gray; min-height: 10rem;">
+            <div class="col align-self-start" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+
+            <div class="col align-self-center" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+
+            <div class="col align-self-end" style="background-color: green;">
+              <h4>Columna 3</h4>
+              <p>Contenido de columna 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exe-div tab-pane fade m-1 px-2 pb-3" id="exe-6" role="tabpanel" aria-labelledby="exe-6-tab">
+        <header class="py-4">
+          <h2>Ejercicio 6</h2>
+        </header>
+        <div class="container">
+          <h3>Fila 1 (end)</h3>
+          <div class="row justify-content-end" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+          <h3>Fila 2 (start)</h3>
+          <div class="row justify-content-start" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+          <h3>Fila 3 (center)</h3>
+          <div class="row justify-content-center" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+          <h3>Fila 4 (between)</h3>
+          <div class="row justify-content-between" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+          <h3>Fila 5 (around)</h3>
+          <div class="row justify-content-around" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+          <h3>Fila 6 (evenly)</h3>
+          <div class="row justify-content-evenly" style="background-color: gray; width: 100%;">
+            <div class="col-3" style="background-color: red;">
+              <h4>Columna 1</h4>
+              <p>Contenido de columna 1</p>
+            </div>
+            <div class="col-3" style="background-color: blue;">
+              <h4>Columna 2</h4>
+              <p>Contenido de columna 2</p>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Content-->
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container">
+      <p style="color: whitesmoke;">Copyright 2022</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
