@@ -50,9 +50,8 @@ include_once("./header.php");
             </div>
         </div>
         <div class="col-sm-8">
-            <!-- Hacer responsive   width="735 / 57%"  -->
-            <img src="" class="img-fluid w-100" id="imagenMax">
             <h1 id="contexto"></h1>
+            <img src="" class="img-fluid" id="imagenMax">
         </div>
     </div>
     <br>
