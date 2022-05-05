@@ -35,24 +35,23 @@ include_once("./header.php");
     <div class="row" name="fila-media">
         <div class="col-sm-4">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/endgame.jpg')" id="Avengers: Endgame">Avengers: Endgame</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/interestellar.jpg')" id="Interestellar">Interestellar</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/arcane.jpg')" id="Arcane">Arcane</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/madmax.jpg')" id="Mad Max: Fury Road">Mad Max: Fury Road</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/morbius.jpg')" id="Morbius">Morbius</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/taboo.jpg')" id="Taboo">Taboo</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/peakyblinders.jpg')" id="Peaky Blinders">Peaky Blinders</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/spiderman-no_way_home.jpg')" id="Spiderman: No Way Home">Spiderman: No Way Home</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/batman.jpg')" id="Batman">Batman</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/theflash.jpg')" id="The Flash">The Flash</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/uncharted.jpg')" id="Uncharted: Fuera del Mapa">Uncharted: Fuera del Mapa</a>
-                <a href="#" class="list-group-item list-group-item-action" onclick="seleccionar('img/encanto.jpg')" id="Encanto">Encanto</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/endgame.jpg')" id="Avengers: Endgame">Avengers: Endgame</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/interestellar.jpg')" id="Interestellar">Interestellar</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/arcane.jpg')" id="Arcane">Arcane</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/madmax.jpg')" id="Mad Max: Fury Road">Mad Max: Fury Road</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/morbius.jpg')" id="Morbius">Morbius</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/taboo.jpg')" id="Taboo">Taboo</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/peakyblinders.jpg')" id="Peaky Blinders">Peaky Blinders</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/spiderman-no_way_home.jpg')" id="Spiderman: No Way Home">Spiderman: No Way Home</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/batman.jpg')" id="Batman">Batman</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/theflash.jpg')" id="The Flash">The Flash</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/uncharted.jpg')" id="Uncharted: Fuera del Mapa">Uncharted: Fuera del Mapa</a>
+                <a class="list-group-item list-group-item-action" onclick="seleccionar('img/encanto.jpg')" id="Encanto">Encanto</a>
             </div>
         </div>
         <div class="col-sm-8">
-            <!-- Hacer responsive   width="735 / 57%"  -->
-            <img src="" class="img-fluid w-100" id="imagenMax">
             <h1 id="contexto"></h1>
+            <img src="" class="img-fluid" id="imagenMax">
         </div>
     </div>
     <br>
