@@ -1,0 +1,37 @@
+.nav-link {
+  color: black;
+}
+
+.img-thumbnail {
+  cursor: pointer;
+}
+
+.nav-link.active > .img-thumbnail {
+  background-color: #3c78d8;
+  border-radius: 10px;
+}
+
+.nav-link > .img-thumbnail:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  background-color: #3c78d8;
+  border-radius: 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #3c78d8;
+  font-weight: bold;
+}
+
+#posterMaxed {
+  display: none;
+}
+
+#movieModal {
+  display: none;
+}
+
+#serieModal {
+  display: none;
+}

@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/styles/ejercicios/ejercicio2.css">
+    <link rel="stylesheet" href="../assets/styles/ejercicios/ejercicio3.css">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../assets/js/ejercicios/ejercicio2.js"></script>
+    <script src="../assets/js/ejercicios/ejercicio3.js"></script>
 
     <title>Grupo 4 - Azul</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" onload="loadPosters()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">G4</a>
@@ -67,8 +67,9 @@
                 <div class="card-body p-4">
                     <figure class="mb-0">
                         <ul class="list-unstyled">
-                            <li><strong>Ejercicio 2</strong></li>
-                            <li>Utilizando el ejercicio de tabs del práctico de Bootstrap, cargar el contenido que utilizaste en cada tab de forma dinámica utilizando AJAX. Al hacer click en una pestaña, se deberá cargar el contenido de la sección correspondiente guardado en la base de datos en alguna tabla, o bien en algún archivo. Además, agregá estilos sobre la pestaña activa para dar la sensación de pestaña activada/desactivada mediante colores de fondo.</li>
+                            <li><strong>Ejercicio 3</strong></li>
+                            <li>En el <a class="text-white" href="../../1/ejercicios/ejercicio11.html"><strong>ejercicio 6 del práctico anterior</strong></a>, se utilizó una zona de imágenes extendidas junto con un título asociado.</li>
+                            <li>Se pide ahora que al hacer click en cada título aparezca un modal descriptivo de la imagen y la imagen cambie acorde al título. Realizar esto con la ayuda de un modal del framework Bootstrap, cargue la información de la imagen con AJAX cuando se haga clic en el título de una imagen AAA. La información puede ser tomada desde una base o desde archivos.</li>
                         </ul>
                     </figure>
                 </div>
@@ -76,7 +77,247 @@
         </div>
 
         <div class="container mt-4">
+            <h1 class="text-center mb-5">"El Señor de los Anillos", "Harry Potter" o "Star Wars": 3 sagas cinematográficas que han hecho historia</h1>
+            <div class="row" name="fila1">
+                <div class="col-lg-12">
+                    <h4>El Señor de los Anillos</h4>
+                    <p>
+                        Frodo y la compañía llenaron las taquillas entre 2001 y 2003, con una saga que ya había atraído a miles de lectores y que no podían esperar a verla en la gran pantalla, aunque eso parecía imposible de recrear. J.R.R. Tolkien escribió la saga entre 1937 y 1949, y gracias a Peter Jackson las letras se hicieron escenas.
+                    </p>
+                    <p>
+                        "La Comunidad del Anillo" fue la primera entrega que conquistó a los espectadores con una recaudación de casi 890,0 millones de dólares. Con la última entrega, "El Retorno del Rey" el esfuerzo titánico por conseguir llevar a cabo toda esta producción cinematográfica se vio recompensado con 11 Óscar y sus 1,142 mil millones de dólares de recaudación. Seguro que Tolkien estaría orgulloso de esta tremenda acogida de su mundo y sus hobbits. Además de tener una banda sonora exquisita, que a día de hoy sigue siendo aplaudida.
 
+                    </p>
+
+                    <h4>Harry Potter</h4>
+                    <p>
+                        El niño que sobrevivió nos mantuvo pendientes de sus aventuras y sus hechizos desde 2001 hasta 2011. Con cada entrega éramos testigos no solo de una nueva aventura que acercaba a Harry hacia su destino, sino que también pudimos ver el crecimiento de los actores, como evolucionaron de niños a jóvenes adultos.
+                    </p>
+                    <p>
+                        Harry Potter es una de las sagas que más seguidores ha movido en todo el mundo. Todo un universo creado al completo por J.K. Rowling, donde los hechizos, la magia, el misterio, el amor, las aventuras y el drama están servidos.
+                    </p>
+                    <p>
+                        Es una de las sagas de libros más vendidos de la historia, traducida a 65 idiomas, incluso el latín. La marca Harry Potter es una de las más conocidas y exitosas del mundo con un valor de 15 mil millones de dólares. Warner Bros fue la encargada de llevar los libros a la gran pantalla y hacernos soñar con Harry y sus amigos.
+                    </p>
+
+                    <h4>Star Wars</h4>
+                    <p>
+                        Para muchos es la saga por excelencia. Star Wars empezaba con sus aventuras en 1977. Hay tres trilogías que conectan las historias entre sí, en 2019 salió a la gran pantalla el último episodio de la última trilogía: "El ascenso de Skywalker". Con esta última entrega concluía una de las aventuras galácticas que más seguidores ha tenido, llegando a recaudar 1,074 mil millones de dólares. Star Wars es una saga que consiguió enganchar a tres generaciones desde que se estrenó y que mantiene un público fiel a la Princesa Leia, Darth Vader, Obi-Wan Kenobi o Han Solo.
+                    </p>
+                    <p>
+                        Lo que está claro es que Star Wars ha tenido una larga vida, con recaudaciones en taquilla millonarias, con aventuras galácticas que atrapan y siempre bajo un mismo lema, ya sabes, “¡que la fuerza te acompañe!”.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row mb-2 mt-2">
+                <ul class="nav thumb">
+                    <!-- Posters Harry Potter -->
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-1"><img id="hp1" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-2"><img id="hp2" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-3"><img id="hp3" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-4"><img id="hp4" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+
+                    <!-- Posters LOTR -->
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-5"><img id="lotr1" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-6"><img id="lotr2" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-7"><img id="lotr3" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-8"><img id="lotr4" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+
+                    <!-- Posters Star Wars -->
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-9"><img id="sw1" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-10"><img id="sw2" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-11"><img id="sw3" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                    <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-12"><img id="sw4" class="img-thumbnail" src="" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="tab-content">
+                <div class="tab-pane show active" id="elemento-1">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!-- lista -->
+                            <ul class="nav nav-pills flex-column">
+                                <li class="nav-item">
+                                    <a id="item1" class="nav-link" type="button" role="tab">Harry Potter: La Piedra Filosofal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item2" class="nav-link">Harry Potter: La Cámara de los Secretos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item3" class="nav-link">Harry Potter: El Prisionero de Azkaban</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item4" class="nav-link">Animales Fantasticos: Los Secretos de Dumbledore</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item5" class="nav-link">El Señor de los Anillos: La Comunidad del Anillo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item6" class="nav-link">El Señor de los Anillos: Las Dos Torres</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item7" class="nav-link">El Señor de los Anillos: El Retorno del Rey</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item8" class="nav-link">El Señor de los Anillos: Los Anillos del Poder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item9" class="nav-link">Star Wars: La Amenaza Fantasma</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item10" class="nav-link">Star Wars: El Ataque de los Clones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item11" class="nav-link">Star Wars: La Venganza de los Sith</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="item12" class="nav-link">Star Wars: Obi-Wan Kenobi</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="movieModal" class="col-sm-8 text-center">
+                            <!-- Button trigger modal -->
+                            <button id="movieModalBtn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img id="posterMaxed" class="img-thumbnail rounded-2" src="" height="350" width="300">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="movieTitle">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p id="movieOverview">...</p>
+                                        </div>
+                                        <div id="movieGenres">
+                                            <span class="badge rounded-pill bg-dark">asdasd</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="serieModal" class="col-sm-8 text-center">
+                            <!-- Button trigger modal -->
+                            <button id="serieModalBtn" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <img id="posterMaxed" class="img-thumbnail rounded-2" src="" height="350" width="300">
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="serieTitle">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p id="serieOverview">...</p>
+                                        </div>
+                                        <div id="serieGenres">
+                                            <span class="badge rounded-pill bg-dark">asdasd</span>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row mt-5" name="fila-baja">
+                <h3>Ranking recaudación de cada película</h3>
+                <div class="col-sm-8">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">N°</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">$USD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>El Señor de los Anillos: El Retorno del Rey</td>
+                                <td>$1.140.682.011</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Harry Potter: La Piedra Filosofal</td>
+                                <td>$974.755.371</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>El Señor de los Anillos: Las Dos Torres</td>
+                                <td>$925.282.504 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Harry Potter: La Cámara Secreta</td>
+                                <td>$878.979.634</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>El Señor de los Anillos: la Comunidad del Anillo</td>
+                                <td>$870.761.744</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Harry Potter: El Prisionero de Azkaban</td>
+                                <td>$795.634.069</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-sm-4 mt-5">
+                    <span id="contexto">
+                        Aquí podemos apreciar una tabla con el ranking de 6 películas nuestras con mayor recaudación ordenadas de mayor a menor
+                    </span>
+                </div>
+            </div>
         </div>
     </main>
 
