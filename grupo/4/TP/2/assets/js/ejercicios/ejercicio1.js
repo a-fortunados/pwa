@@ -46,17 +46,12 @@ $(document).ready(function () {
     $("#partSelection3").prop("selectedIndex", 0);
     $("#partSelection4").prop("selectedIndex", 0);
     $("#resetButton").hide();
-    $("#selectedMovie").hide();
   }
 
   // Generates movie data
   function generateMovieData(partID) {
     let endpoint = "https://api.themoviedb.org/3/";
     let API_KEY = "916d2e750176a7a221a2d327cb525156";
-
-    $("#selectedMovie").show();
-
-    console.log("PartID: " + partID);
 
     $.ajax({
       type: "GET",
@@ -65,7 +60,7 @@ $(document).ready(function () {
         console.log(r);
         let poster = r.poster_path;
         let title = r.title;
-        let releaseDate = r.original_title;
+        let releaseDate = r.release_date;
         let runtime = r.runtime;
         let sinopsis = r.overview;
 
@@ -87,6 +82,8 @@ $(document).ready(function () {
         $("#sinopsis").text(sinopsis);
       },
     });
+
+    $("#selectedMovie").show();
   }
 
   // Lists movie genres
