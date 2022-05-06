@@ -2,27 +2,27 @@ let genres = {
   genres: [
     {
       id: 28,
-      name: "Action",
+      name: "Acción",
     },
     {
       id: 12,
-      name: "Adventure",
+      name: "Aventura",
     },
     {
       id: 16,
-      name: "Animation",
+      name: "Animación",
     },
     {
       id: 35,
-      name: "Comedy",
+      name: "Comedia",
     },
     {
       id: 80,
-      name: "Crime",
+      name: "Crimen",
     },
     {
       id: 99,
-      name: "Documentary",
+      name: "Documental",
     },
     {
       id: 18,
@@ -30,15 +30,15 @@ let genres = {
     },
     {
       id: 10751,
-      name: "Family",
+      name: "Familiar",
     },
     {
       id: 14,
-      name: "Fantasy",
+      name: "Fantasía",
     },
     {
       id: 36,
-      name: "History",
+      name: "Historia",
     },
     {
       id: 27,
@@ -46,11 +46,11 @@ let genres = {
     },
     {
       id: 10402,
-      name: "Music",
+      name: "Músical",
     },
     {
       id: 9648,
-      name: "Mystery",
+      name: "Misterio",
     },
     {
       id: 10749,
@@ -58,23 +58,23 @@ let genres = {
     },
     {
       id: 878,
-      name: "Science Fiction",
+      name: "Ciencia Ficción",
     },
     {
       id: 10770,
-      name: "TV Movie",
+      name: "Película para TV",
     },
     {
       id: 53,
-      name: "Thriller",
+      name: "Triller",
     },
     {
       id: 10752,
-      name: "War",
+      name: "Guerra",
     },
     {
       id: 37,
-      name: "Western",
+      name: "Lejeno Oeste",
     },
   ],
 };
