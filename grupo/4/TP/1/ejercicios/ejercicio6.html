@@ -9,32 +9,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 6</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3c78d8;">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="../index.html">G4 Azul</a>
+            <a class="navbar-brand text-white" href="#">G4 Azul</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="../../../index.html">Home Subgrupos</a>
+                        <a class="nav-link active text-white" aria-current="page" href="../../../index.html">Dominio TP1</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ejercicios
+                            Ejercicios TP1
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Ejercicio 1</a></li>
+                            <li><a class="dropdown-item" href="ejercicio1.html">Ejercicio 1</a></li>
                             <li><a class="dropdown-item" href="ejercicio2.html">Ejercicio 2</a></li>
                             <li><a class="dropdown-item" href="ejercicio3.html">Ejercicio 3</a></li>
                             <li><a class="dropdown-item" href="ejercicio4.html">Ejercicio 4</a></li>
                             <li><a class="dropdown-item" href="ejercicio5.html">Ejercicio 5</a></li>
-                            <li><a class="dropdown-item" href="ejercicio6.html">Ejercicio 6</a></li>
+                            <li><a class="dropdown-item" href="#">Ejercicio 6</a></li>
                             <li><a class="dropdown-item" href="ejercicio7.html">Ejercicio 7</a></li>
                             <li><a class="dropdown-item" href="ejercicio8.html">Ejercicio 8</a></li>
                             <li><a class="dropdown-item" href="ejercicio9.html">Ejercicio 9</a></li>
@@ -61,10 +61,16 @@
             <div class="card-body p-4">
                 <figure class="mb-0">
                     <ul class="list-unstyled">
-                        <li><strong>Ejercicio 1: Sistema de grillas</strong></li>
-                        <li>Debemos pensar para armar nuestro esquema de la página que tenemos la posibilidad de definir filas y en cada fila definir de 1 hasta 12 columnas. Cada columna con un ancho relativo a ese número 12.</li>
-                        <li>Luego Bootstrap se encarga de colapsar las columnas cuando se accede al sitio desde un dispositivo con una capacidad limitada en cuanto al ancho en píxeles (esto permite una experiencia más placentera al visitante que accede a nuestra página desde un celular con capacidades limitadas).</li>
-                        <li>Para ver y entender como creamos las columnas en cada fila y como colapsan según el ancho del dispositivo podemos analizar la siguiente demostración:</li>
+                        <li><strong>Ejercicio 6: Alineación horizontal de columnas</strong>
+                        <li>Existen 5 formas de alineación horizontal de columnas y se logran mediante las clases:</li>
+                        <ul>
+                            <li>justify-content-end</li>
+                            <li>justify-content-start</li>
+                            <li>justify-content-center</li>
+                            <li>justify-content-between</li>
+                            <li>justify-content-around</li>
+                        </ul>
+                        <li>Utilice un contenedor de 5 filas (cada fila tiene 2 columnas) con las alineaciones enumeradas anteriormente.</li>
                     </ul>
                 </figure>
             </div>
@@ -72,103 +78,61 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-xxl-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-xxl-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-xxl-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-xl-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-xl-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-xl-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-lg-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-lg-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-lg-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-md-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-md-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-md-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row">
-            <div class="col-sm-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-sm-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-            <div class="col-sm-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div class="row mb-4">
+        <h5 class="text-start fst-italic">justify-content-end</h5>
+        <div class="row row-cols-2 justify-content-end">
             <div class="col-4" style="background-color:#aaa">
-                <h1>Columna 1</h1>
-                <p>Esto es una prueba de bootstrap.</p>
+                <h5>Columna 1</h5>
             </div>
             <div class="col-4" style="background-color:#bbb">
-                <h1>Columna 2</h1>
-                <p>Esto es una prueba de bootstrap.</p>
+                <h5>Columna 2</h5>
             </div>
-            <div class="col-4" style="background-color:#ccc">
-                <h1>Columna 3</h1>
-                <p>Esto es una prueba de bootstrap.</p>
+        </div>
+
+        <hr>
+
+        <h5 class="text-start fst-italic">justify-content-start</h5>
+        <div class="row row-cols-2 justify-content-start">
+            <div class="col-4" style="background-color:#aaa">
+                <h5>Columna 1</h5>
+            </div>
+            <div class="col-4" style="background-color:#bbb">
+                <h5>Columna 2</h5>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 class="text-start fst-italic">justify-content-center</h5>
+        <div class="row row-cols-2 justify-content-center">
+            <div class="col-4" style="background-color:#aaa">
+                <h5>Columna 1</h5>
+            </div>
+            <div class="col-4" style="background-color:#bbb">
+                <h5>Columna 2</h5>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 class="text-start fst-italic">justify-content-between</h5>
+        <div class="row row-cols-2 justify-content-between">
+            <div class="col-4" style="background-color:#aaa">
+                <h5>Columna 1</h5>
+            </div>
+            <div class="col-4" style="background-color:#bbb">
+                <h5>Columna 2</h5>
+            </div>
+        </div>
+
+        <hr>
+
+        <h5 class="text-start fst-italic">justify-content-around</h5>
+        <div class="row row-cols-2 justify-content-around">
+            <div class="col-4" style="background-color:#aaa">
+                <h5>Columna 1</h5>
+            </div>
+            <div class="col-4" style="background-color:#bbb">
+                <h5>Columna 2</h5>
             </div>
         </div>
     </div>
@@ -180,8 +144,8 @@
             </section>
         </div>
 
-        <div class="text-center text-white p-3" style="background-color: #3c78d8;">
-            <span><strong>Hecho con amorcito</strong> ❤</span>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <span>Hecho con amorcito ❤</span>
         </div>
     </footer>
 </body>
