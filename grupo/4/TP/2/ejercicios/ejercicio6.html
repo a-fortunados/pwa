@@ -70,10 +70,7 @@
                 <div class="card-body p-4">
                     <figure class="mb-0">
                         <ul class="list-unstyled">
-                            <li><strong>Ejercicio 4-5-6</strong></li>
-                            <li>Realizar un formulario web para cargar contactos que se registren en el sitio desarrollado. Dichos contactos se pedirán para enviar màs informaciòn asociada a la página. Para la lógica del formulario se pueden realizar validaciones al momento de cargarlo o bien al presionar el botón "Enviar" se deberán validar los datos en cliente. Específicamente usando AJAX debe validar que el usuario ingresado no exista ya en la base de datos. Esta validación debe realizarse al producirse el evento “change” del input Usuario.</li>
-                            <li>En cualquier caso, si algún campo es erróneo, se deben resaltar de algún modo el/los campos con errores y su mensaje de error correspondiente. Si no existen errores, se enviarán los datos al servidor y se cargarán en la base de datos. Si todo ha salido bien en el servidor, se envía al cliente la cadena "Ok"; caso contrario se enviará un "Error". Para finalizar, el cliente deberá mostrar un mensaje de error o confirmación según corresponda.</li>
-                            <li>Reutilizar la tabla del práctico anterior y agregando hasta 18 filas, (si no la construyó agregue una para este propósito) y usando AJAX, hacer que esta tabla muestre los resultados de forma paginada en grupos de a 5.</li>
+                            <li><strong>Ejercicio 6</strong></li>
                             <li>Al formulario de registro anterior agregar un campo de Estado/Provincia en un campo de texto. A medida que escribimos caracteres dentro del input mostraremos un conjunto de estados, a modo de lista de sugerencias, que comienzan con los caracteres ingresados hasta el momento. La lista de sugerencias se deberá mostrar en un div que se encuentre debajo del input.</li>
                             <li class="mt-3"><strong>Observación: </strong>Para la realización de este trabajo práctico puede usar la base de datos PracticoAjax.sql</li>
                         </ul>
@@ -83,19 +80,12 @@
         </div>
 
         <div class="container mt-2">
-            <form class="form-group" id="formularioContacto" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
-                <label for="">Empresa:</label>
-                <input type="text" class="form-control" name="empresa" id="empresa" aria-describedby="helpId" placeholder="Empresa">
-                <label for="telefono">Teléfono:</label>
-                <input type="text" class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="Teléfono">
-                <label for="mail">Mail:</label>
-                <input type="text" class="form-control" name="mail" id="mail" aria-describedby="helpId" placeholder="Mail">
-                <label for="comentarios">Comentarios:</label>
-                <textarea type="text" class="form-control" name="comentarios" id="comentarios" aria-describedby="helpId" placeholder="Comentarios"></textarea>
-                <input id="enviarDatos" class="btn btn-primary border-dark my-3 mx-1" type="button" value="Enviar"><button class="btn btn-danger border-dark my-3 mx-1" type="reset">Borrar</button>
-            </form>
+            <input type="text" id="pais" class="form-control mt-3">
+            <select id="mostrarPaises" class="form-control mt-3">
+            </select>
+            <hr>
+            <h5>Estados</h5>
+            <select id="mostrarEstados" class="form-control mt-3"></select>
         </div>
     </main>
 

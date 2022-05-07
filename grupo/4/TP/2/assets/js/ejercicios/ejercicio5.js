@@ -1,9 +1,5 @@
-let d = document;
-
-$(d).ready(function () {
-  $.ajax("http://localhost/pwa/bdQuery.php?contactos=1", {
-    // url: "http://127.0.0.1:5500/helpers/data/consultasBD.php?contactos=1",
-    // type: "GET",
+$(document).ready(function () {
+  $.ajax("http://localhost/pwa/consultasBD.php?contactos=1", {
     success: function (data) {
       console.log(data);
       let contactos;
