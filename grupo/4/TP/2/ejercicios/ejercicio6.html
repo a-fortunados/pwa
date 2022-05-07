@@ -80,12 +80,29 @@
         </div>
 
         <div class="container mt-2">
-            <input type="text" id="pais" class="form-control mt-3">
-            <select id="mostrarPaises" class="form-control mt-3">
-            </select>
-            <hr>
-            <h5>Estados</h5>
-            <select id="mostrarEstados" class="form-control mt-3"></select>
+            <div class="container mt-2">
+                <form class="form-group" id="formularioContacto" method="POST">
+                    <label class="mt-2" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Nombre">
+                    <label class="mt-2" for="">Empresa:</label>
+                    <input type="text" class="form-control" name="empresa" id="empresa" aria-describedby="helpId" placeholder="Empresa">
+                    <label class="mt-2" for="telefono">Teléfono:</label>
+                    <input type="text" class="form-control" name="telefono" id="telefono" aria-describedby="helpId" placeholder="Teléfono">
+                    <label class="mt-2" for="mail">Mail:</label>
+                    <input type="text" class="form-control" name="mail" id="mail" aria-describedby="helpId" placeholder="Mail">
+                    <label class="mt-2" for="pais">Pais:</label>
+                    <input type="text" id="pais" name="pais" class="form-control">
+                    <select id="mostrarPaises" class="form-control mt-3">
+                    </select>
+                    <label class="mt-2" for="estado">Estado</label>
+                    <select name="estado" id="mostrarEstados" class="form-control"></select>
+                    <label class="mt-2" for="comentarios">Comentarios:</label>
+                    <textarea type="text" class="form-control" name="comentarios" id="comentarios" aria-describedby="helpId" placeholder="Comentarios"></textarea>
+                    <div class="mt-2">
+                        <input id="enviarDatos" class="btn btn-primary border-dark my-3 mx-1" type="button" value="Enviar"><button class="btn btn-danger border-dark my-3 mx-1" type="reset">Borrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 

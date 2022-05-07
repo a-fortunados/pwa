@@ -9,7 +9,6 @@ $(document).ready(function () {
       $("#tableBody").append(contactos);
     },
     error: function muestraError(err) {
-      console.log("CHAU");
       console.log(err);
     },
   });
