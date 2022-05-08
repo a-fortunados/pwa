@@ -45,6 +45,7 @@ $(document).ready(function () {
     $("#partSelection2").prop("selectedIndex", 0);
     $("#partSelection3").prop("selectedIndex", 0);
     $("#partSelection4").prop("selectedIndex", 0);
+    $("#selectedMovie").hide();
     $("#resetButton").hide();
   }
 
