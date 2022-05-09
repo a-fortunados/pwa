@@ -72,7 +72,7 @@
     color: black;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-item .dropdown-menu .nav-link{
     color: #ffffff;
     -webkit-text-stroke: 0.2px black;
     font-weight: bold;
@@ -88,6 +88,10 @@
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #000 !important;
+}
+
+.dropdown-menu .nav-link:focus, .dropdown-menu .nav-link:hover{
     color: #000 !important;
 }
 
