@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
 
-
-
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -24,8 +22,9 @@
     <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
     <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#7952b3">
-    <link rel="stylesheet" href="./styles.css">
-
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -52,49 +51,79 @@
 
     <header class="mb-5">
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+                            <a class="nav-link" aria-current="page" href="../../index.php">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio1.php">Ejercicio 1</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TRABAJO PRACTICO 1
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio1.php">Ejercicio 1</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio2.php">Ejercicio 2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio3.php">Ejercicio 3</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio4.php">Ejercicio 4</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio5.php">Ejercicio 5</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio6.php">Ejercicio 6</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio7.php">Ejercicio 7</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio8.php">Ejercicio 8</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio9.php">Ejercicio 9</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio10.php">Ejercicio 10</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp1/ejercicio11.php">Ejercicio Final</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio2.php">Ejercicio 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio3.php">Ejercicio 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio4.php">Ejercicio 4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio5.php">Ejercicio 5</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio6.php">Ejercicio 6</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio7.php">Ejercicio 7</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio8.php">Ejercicio 8</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio9.php">Ejercicio 9</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio10.php">Ejercicio 10</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./ejercicio11.php">Ejercicio Final</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                TRABAJO PRACTICO 2
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio1.php">Ejercicio 1</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio2.php">Ejercicio 2</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio3.php">Ejercicio 3</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio4.php">Ejercicio 4</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio5.php">Ejercicio 5</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="../../trabajosPracticos/tp2/ejercicio6.php">Ejercicio 6</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
