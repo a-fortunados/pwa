@@ -16,3 +16,13 @@
 ## Integrantes G4
 - [Gonzalez Juan Marcos](https://github.com/jmarcosg)
 - [Graff Rocio](https://github.com/rociograff)
+
+<hr>
+
+## Contenido
+
+### **Trabajo Práctico 1**
+Se realizó una implementación de las distintas funcionalidades y componentes de la librería de Bootstrap a lo largo de 11 ejercicios y un dominio propio para cada subgrupo. Se eligió como tematica general de grupo dominios de peliculas y series.
+
+### **Trabajo Práctico 2**
+Se realizó una implementación de las distintas funcionalidades de JQuery y AJAX, además se continuó utilizando la librería de Bootstrap y la temática de los dominios. Para la facilitación de generación de contenido se decidió consumir la [API](https://developers.themoviedb.org/3/getting-started/introduction) de [TheMovieDB](https://www.themoviedb.org/).
